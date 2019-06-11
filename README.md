@@ -1,1 +1,1 @@
-# hospital-management
+# react-native-with-redux
