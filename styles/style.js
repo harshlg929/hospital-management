@@ -1,72 +1,94 @@
-import { StyleSheet } from 'react-native';
-import {BLUE, WHITE} from './../util/color-contants'; 
+import { StyleSheet, Dimensions } from 'react-native';
+const { width } = Dimensions.get('window');
+import { WHITE, BLUE, GREEN, GREYSHADE } from './../util/color-constants';
+
 export default StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    backgroundColor: BLUE,
-    justifyContent: 'center'
-  },
-  //Header
-  HeaderView: {
-    width: '85%',
-    alignItems: "center"
-  },
-  HeaderText: {
-    color: WHITE,
-    fontSize: 20
-  },
+    //Common
+    container: {
+        flex: 1,
+        width: width,
+        alignItems: 'center',
+        backgroundColor: BLUE,
+    },
+    roomButton: {
+        backgroundColor: WHITE,
+        alignSelf: 'center',
+        justifyContent: 'center',
+        height: 42,
+        width: '100%',
+        borderRadius: 5,
+        marginBottom: 10,
+    },
+    ButtonText: {
+        alignSelf: 'center',
+        justifyContent: 'center',
+        color: BLUE,
+    },
 
-  // Login Styles
-  fieldsWrapper: {
-    flex: 1,
-    marginTop: 5,
-  },
-  contentWrapper: {
-    flexDirection: 'row',
-    alignSelf: 'center',
-    justifyContent: 'center',
-  },
-  ContentOuterWrapper: {
-    flex: 0.7,
-    width: '90%',
-  },
-  InputField: {
-    borderWidth: 1,
-    borderColor: WHITE,
-    paddingVertical: 9,
-    color: WHITE,
-    paddingLeft: 15,
-    borderRadius: 5,
-    textAlign: 'left',
-    marginBottom: 20
-  },
-  ButtonLogin: {
-    backgroundColor: WHITE,
-    alignSelf: 'center',
-    justifyContent: 'center',
-    height: 42,
-    width: '100%',
-    borderRadius: 5,
-    marginBottom: 30,
-  },
-  ButtonText: {
-    alignSelf: 'center',
-    justifyContent: 'center',
-    color: BLUE,
-  },
-  BottomLinkTextWrapper: {
-    alignSelf: 'center',
-    paddingBottom: 5,
-    justifyContent: 'center',
-  },
-  BottomLinkText: {
-    alignSelf: 'center',
-    justifyContent: 'center',
-    color: WHITE,
-  },
-  PhoneNumberWrap: {
-    textDecorationLine: 'underline',
-  },
+    //Header
+    HeaderView: {
+        width: '85%',
+        alignItems: "center"
+    },
+    HeaderText: {
+        color: WHITE,
+        fontSize: 20
+    },
 
-});
+    //Details
+    header: {
+        backgroundColor: "#00BFFF",
+        height: 200,
+    },
+    avatar: {
+        width: 130,
+        height: 130,
+        borderRadius: 63,
+        borderWidth: 4,
+        borderColor: "white",
+        marginBottom: 10,
+        alignSelf: 'center',
+        position: 'absolute',
+        marginTop: 130
+    },
+    name: {
+        fontSize: 22,
+        color: "#FFFFFF",
+        fontWeight: '600',
+    },
+    body: {
+        marginTop: 40,
+    },
+    bodyContent: {
+        flex: 1,
+        alignItems: 'center',
+        padding: 30,
+    },
+    name: {
+        fontSize: 28,
+        color: "#696969",
+        fontWeight: "600"
+    },
+    info: {
+        fontSize: 16,
+        color: "#00BFFF",
+        marginTop: 10
+    },
+    description: {
+        fontSize: 16,
+        color: "#696969",
+        marginTop: 10,
+        textAlign: 'center'
+    },
+    buttonContainer: {
+        marginTop: 10,
+        height: 45,
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginBottom: 20,
+        width: 250,
+        borderRadius: 30,
+        backgroundColor: "#00BFFF",
+    },
+})

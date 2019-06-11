@@ -1,18 +1,21 @@
 {
   "expo": {
-    "name": "management",
-    "description": "This project is really great.",
-    "slug": "management",
+    "name": "HospitalManagement",
+    "description": "This project used to view available rooms and associated patients",
+    "slug": "hospitalManagement",
     "privacy": "public",
-    "sdkVersion": "31.0.0",
-    "platforms": ["ios", "android"],
-    "version": "1.0.0",
+    "sdkVersion": "27.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "2.0.0",
     "orientation": "portrait",
-    "icon": "./src/assets/icon.png",
+    "icon": "./images/ico-logo.png",
     "splash": {
-      "image": "./src/assets/splash.png",
+      "image": "./images/splash-screen.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#0070c0"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -21,7 +24,12 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.management.management",
+      "supportsTablet": false
+    },
+    "android": {
+      "package": "com.management.management",
+      "versionCode": 5
     }
   }
 }
